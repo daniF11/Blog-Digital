@@ -36,6 +36,11 @@ body {
 
 nav {
  padding: 1em;
+   position: fixed;
+  top: 0;
+  width: 100%;
+  
+  z-index: 1;
 }
 
 nav ul {
@@ -56,16 +61,20 @@ nav a {
   color: #f4f4f4; /* Color de texto */
   border-radius: 10px;
   padding: 5px;
-
+ 
 
 }
 
 nav a:hover {
-  color: #d32f2f; /* Rojo oscuro */
+  background-color: #f4f4f4;
+  color: #555; /* Rojo oscuro */
+
+
 }
 
 main {
   padding: 1em;
+
 }
 
 .img-fullconect{
@@ -115,4 +124,9 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+.img-soporte img{
+  margin-top: 10px;
+  border: solid 2px red;
 }
