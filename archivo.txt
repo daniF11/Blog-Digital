@@ -14,4 +14,16 @@ Asi como se observa en la imagen, desconectando el cable negro (POE), abrirle la
 
 ¡Estoy atenta al cambio indicado!🙂
 
+**********************************************************************************************************************
+
+
+Responsive Centrar:
+
+-Título principal
+
+
+Responsive Minimizar:
+
+-Imagenes Punto1, Punto2
+
 
