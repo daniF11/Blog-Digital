@@ -3,58 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guía paso a paso</title>
+  <title>Digital Blog</title>
   <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Orbitron&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
 </head>
 <body>
+
   <header class="header-container">
-    <h1 class="header-title">Guía paso a paso conexión equipos de Internet</h1>
-    <img src="img/logoLD.png" class="header-image" width="250" height="100">
+    <img src="img/Logos/logoLD.png" class="header-image" width="500" height="200">
+    <h1 class="header-title">Tecnología, Conexión y Cuidados Equipos de Internet 📡</h1>
+    
   </header>
-  <nav>
-    <ul>
-      <li><a href="#paso-1">Item 1</a></li>
-      <li><a href="#paso-2">Item 2</a></li>
-      <li><a href="#paso-3">Item 3</a></li>
-      <li><a href="#paso-4">Item 4</a></li>
-      <li><a href="#paso-5">Item 5</a></li>
-      <li><a href="#conclusion">Conclusión</a></li>
-    </ul>
-  </nav>
+  
   <main>
+    <select onchange="irASeccion(this)">
+    
+    
+     <option title="Instalación y conexión inicial de los equipos de Internet" value="paso-1"><li>🌏 <a class="pasos" >Punto 1</a></li></option>
+      <option title="Reinicio General de Equipos" value="paso-2"><li>🔀 <a class="pasos" >Punto 2</a></li></option>
+      <option title="Uso adecuado de los equipos de Internet" value="paso-3"><li>✋ <a class="pasos" >Punto 3</a></li></option>
+      <option title="Luces de estado de los equipos de Internet" value="paso-4"><li>🟢 <a class="pasos" >Punto 4</a></li></option>
+      <option title="Recomendaciones eléctricas" value="paso-5"><li>⚡ <a class="pasos" >Punto 5</a></li></option>
+      <option value="conclusion"><li>👇 <a href="#conclusion">Conclusión</a></li>
+    
+
+  </select>
     <section id="paso-1">
-      <h2>Item 1:Instalación y conexión inicial de los equipos de Internet</h2>
-      <p>Para tener acceso a internet, necesitarás algunos equipos que te permitan conectarte. Los equipos básicos que necesitarás son:<br><br>
+      <h2>Punto 1:Instalación y conexión inicial de los equipos de Internet L-D 🌎</h2>
+      <p>Para tener acceso a internet, ofrecemos dos medios de distribución de datos, Fibra Óptica y Radioenlace. Para que el internet funcione en tu casa o negocio necesitarás algunos elementos que permitan conectarte y son los siguientes:<br><br>
 
         <h3>• Fibra Óptica</h3>
 
-        Fibra Óptica: La fibra óptica llega a tu casa a través de una red de telecomunicaciones que puede variar dependiendo de la ubicación geográfica y el proveedor de servicios de internet.
+        <p>Fibra Óptica: La fibra óptica es un medio de comunicación de datos de alta velocidad, llega a tu casa a través de una red distribuida que puede variar dependiendo de la ubicación geográfica.
 
-En general, la fibra óptica es llevada a una caja de conexiones en una calle cercana a tu hogar o negocio.<br><br>
+En general, la fibra óptica es llevada de una caja de conexiones en una calle cercana a tu hogar o negocio.<br><br>
 
-Un módem u ONU: Este dispositivo se conecta a la línea de internet que llega a tu casa o negocio y te permite conectarte a internet.<br><br>
+Un módem u ONU: Este dispositivo se conecta a la línea de cable de fibra que llega a tu casa o negocio y te permite conectarte a internet.<br><br>
 
 
-Un router: Este dispositivo se conecta al módem y te permite conectar varios dispositivos a internet a través de una red inalámbrica (Wi-Fi) o mediante un cable Ethernet.<br><br>
+Un router: Este equipo se conecta al módem y te permite conectar varios dispositivos a internet a través de una red inalámbrica (Wi-Fi) o mediante un cable Ethernet.</p><br><br>
 
 <div class="img-fullconect">
-<img src="img/Equipos/fullfibra2.jpeg"  width="500" height="250">
+<img src="img/Conexiones-Internas/fullfibra2.jpeg" class="img-fullconectf" width="500" height="250">
 </div><br><br>
+
+<div class="img-fullconect">
+  <img src="img/Conexiones-Internas/fullfibra1.jpeg" class="img-fullconectf2" width="500" height="250">
+  </div><br><br>
 
 <h3>• Radioenlace</h3>
 
-Una antena Receptora de Señal: Una antena de radioenlace es un componente fundamental en las comunicaciones inalámbricas que se utiliza para transmitir y recibir señales de radiofrecuencia entre dos puntos distantes.  Estas antenas se utilizan en diversas aplicaciones, como la transmisión de señales de televisión, la comunicación inalámbrica de datos, la telefonía móvil, la transmisión de datos satelitales y la transmisión de señales de radio a larga distancia. La elección de la antena adecuada para una aplicación particular depende de varios factores técnicos.<br><br>
+<p>Un radioenlace es una conexión de comunicaciones inalámbricas que utiliza ondas de radio para transmitir información entre dos puntos distantes. Este tipo de enlace es ampliamente utilizado en telecomunicaciones para proporcionar conexiones a larga distancia entre dos ubicaciones sin la necesidad de instalar cables físicos.<br><br>
+  
+  Una antena Receptora de Señal: Una antena de radioenlace es un componente fundamental en las comunicaciones inalámbricas que se utiliza para transmitir y recibir señales de radiofrecuencia entre dos puntos distantes.  Estas antenas se utilizan en diversas aplicaciones, como la transmisión de señales de televisión, la comunicación inalámbrica de datos, la telefonía móvil, la transmisión de datos satelitales y la transmisión de señales de radio a larga distancia. La elección de la antena adecuada para una aplicación particular depende de varios factores técnicos.<br><br>
 
 
-Un módem o PoE: Este dispositivo se conecta a la línea de internet que llega a tu casa o negocio y te permite alimentar de corriente la antena receptora y conectarte a internet.<br><br>
-Un router: Este dispositivo se conecta al módem y te permite conectar varios dispositivos a internet a través de una red inalámbrica (Wi-Fi) o mediante un cable Ethernet.<br><br>
+Un módem o PoE: Este dispositivo se conecta a través de un cable UTP a la antena receptora, permite alimentar de corriente la antena  y conectarte a internet mediante un router.<br><br>
+Un router: Este dispositivo se conecta al módem o PoE y te permite conectar varios dispositivos a internet a través de una red inalámbrica (Wi-Fi) o mediante un cable Ethernet.</p><br><br>
 
 <div class="img-fullconect">
-<img src="img/equipos/fullconection.jpeg"  width="500" height="250">
+<img src="img/Conexiones-Internas/fullradio.jpeg"  class="img-fullconectr" width="500" height="250">
 </div>
-<br>
+<br><br>
+
+<div class="img-fullconect">
+  <img src="img/Conexiones-Internas/fullradio0.jpg"  class="img-fullconectr2" width="500" height="400">
+  </div>
+  <br>
 <h4>Recomendación Clientes Radioenlace</h4>
-    <em>Para el efectivo funcionamiento de una antena de radioenlace, es importante considerar las siguientes recomendaciones de entorno:</em><br><br>
+    <p><em>Para el efectivo funcionamiento de una antena de radioenlace, es importante considerar las siguientes recomendaciones de entorno:</em><br><br>
 
 <em>Ubicación:</em> Es importante elegir una ubicación adecuada para la antena, evitando obstáculos que puedan interferir con la señal. Es recomendable ubicar la antena en un lugar alto y despejado.<br><br>
 
@@ -64,29 +83,34 @@ Un router: Este dispositivo se conecta al módem y te permite conectar varios di
 
 <em>Altura:</em> La altura de la antena también es importante para su funcionamiento. Es recomendable que la antena esté a una altura suficiente para evitar obstáculos y lograr la mejor calidad de señal.<br><br>
 
-<em>Protección:</em> La antena debe ser protegida de posibles daños causados por el clima y otros factores externos. Se recomienda el uso de cubiertas protectoras y sistemas de anclaje adecuados para asegurar la estabilidad de la antena.<br><br>
+<em>Protección:</em> Se recomienda ser protegida de posibles daños causados por otros factores externos y sistemas de anclaje adecuados para asegurar la estabilidad de la antena.<br><br>
+
+<div class="img-fullconect">
+  <img src="img/Antenas/antenar.jpg"  class="img-install-antena" width="600" height="600">
+  </div>
+  <br><br>
 
 
 </p>
     </section>
     <section id="paso-2">
-      <h2>Item 2: Reinicio General de Equipos</h2>
+      <h2>Punto 2: Soporte y Reinicio General de Equipos 🔀</h2>
 
       <em>Estos pasos puedes hacerlos 2 veces por mes, no importa si el servicio funciona normalmente.</em><br>
 
-      <p><h3>• Manipulación de los equipos</h3>
+      <h3>• Manipulación de los equipos</h3>
 
-En caso de que tengas algún inconveniente con la conexión de internet, puedes seguir estos pasos para solucionar los problemas más comunes:<br><br>
+<p>En caso de que tengas algún inconveniente con la conexión de internet, puedes seguir estos pasos para solucionar los problemas más comunes:<br><br>
 
-<em>Verifica la conexión de los cables:</em> Asegúrate de que los equipos estén encendidos, que todos los cables estén conectados correctamente y que no haya cables sueltos o desconectados.<br>
+<em>Verifica la conexión de los cables:</em> Asegúrate de que los equipos estén encendidos, que todos los cables estén conectados correctamente y que no haya cables sueltos o desconectados.</p><br>
 
 
     <div class="soporte-container">
       <div class="img-soporte">
              <label><strong>Fibra óptica</strong></label><br>
 
-             <img src="img/Equipos/routerfconection.jpeg" width="150" height="155">
-            <img src="img/Equipos/onuconection.jpeg" width="150" height="155">
+             <img src="img/Conexiones-Internas/fullfibra0.jpg" class="conection-fibra-r" width="350" height="350">
+            <img src="img/Conexiones-Internas/routerfconection.jpeg" class="conection-fibra-o" width="350" height="350">
             
             
 
@@ -94,46 +118,120 @@ En caso de que tengas algún inconveniente con la conexión de internet, puedes 
 
       <div class="img-soporte">
              <label><strong>Radioenlace</strong></label><br>
-            <img src="img/Equipos/poeconection.jpeg" width="150" height="100">
-            <img src="img/Equipos/poeconection2.jpeg" width="150" height="100">
-            <img src="img/Equipos/router.jpeg" width="150" height="100">
+            <img src="img/Conexiones-Internas/poeconection.jpeg" class="conection-radio-p" width="350" height="350">
+            <img src="img/Conexiones-Internas/routerrconection.jpeg" class="conection-radio-p1" width="350" height="350">
+            <img src="img/Conexiones-Internas/lucesrradio0.jpg" class="conection-radio-r" width="350" height="350">
 
       </div>
 
     </div>
-<em>Reinicia los equipos:</em> Apaga y enciende el módem y el router para reiniciar la conexión. También puedes desconectar las fuentes de los dispositivos del tomacorriente 10 segundos y volver a conectarlas.<br><br>
+<p><em>Reinicia los equipos:</em> Apaga y enciende el módem y el router para reiniciar la conexión. También puedes desconectar las fuentes de los dispositivos del tomacorriente 10 segundos y volver a conectarlas.</p><br><br>
 
           <div class="soporte-container">
       <div class="img-soporte">
              <label><strong>Reinicio Energía</strong></label><br>
-            <img src="https://jdelectricos.com.co/wp-content/uploads/2021/10/tomacorrientes.jpeg" width="150" height="100">
+            <img src="img/Conexiones-Internas/tomacorriente.jpg" class="conection-energy" width="500" height="250">
            
 
       </div>
 
     </div>
 
-<em>Verifica la conexión del proveedor de servicio de internet:</em> Si los pasos anteriores no funcionan, contacta a tu proveedor de servicio de internet para verificar si hay algún problema con la conexión del proveedor.</p>
+<p><em>Verifica la conexión del proveedor de servicio de internet:</em> Si los pasos anteriores no funcionan, contáctanos para verificar si actualmente se está presentando un fallo en la red.</p>
     </section>
     <section id="paso-3">
-      <h2>Item 3: Título del paso</h2>
-      <p></p>
+      <h2>Punto 3: Uso adecuado de los equipos de Internet ✋</h2>
+      <p>Claves para el buen uso de los equipos de Internet<br><br>
+
+ La conexión a Internet es una herramienta esencial en el hogar o en el negocio, por lo que es importante saber cómo cuidar los equipos que la brindan para prolongar su vida útil y garantizar un uso óptimo. Aquí te brindamos algunos consejos para el cuidado de los equipos de Internet.<br><br>
+
+• Ubicación del router: Coloca el router en un lugar central del hogar o negocio, lejos de electrodomésticos que puedan interferir en la señal, como microondas, teléfonos inalámbricos o televisores. Asegúrate de que esté en un lugar ventilado y no cubierto por otros objetos, ya que esto puede afectar la calidad de la señal.<br><br>
+
+
+• Reinicio periódico: Reinicia el router al menos una vez al mes, ya que esto puede ayudar a mejorar la velocidad y estabilidad de la conexión.<br><br>
+
+• Mantenimiento: Limpia regularmente los equipos con un paño suave y seco para evitar la acumulación de polvo, ya que esto puede afectar su funcionamiento.<br><br>
+
+
+• Contraseña segura: Configura una contraseña segura y única para tu red WiFi, ya que esto evita que personas no autorizadas se conecten a tu red y puedan acceder a tus datos personales.<br><br>
+
+• Configuración adecuada: Asegúrate de que la configuración del router esté adecuada, como inicialmente se dejó instalado, ya que esto puede afectar la velocidad y calidad de la conexión.<br><br>
+
+Siguiendo estos sencillos consejos, podrás prolongar la vida útil de tus equipos de Internet y disfrutar de una conexión estable y segura en tu hogar o negocio.</p>
     </section>
     <section id="paso-4">
-      <h2>Item 4: Título del paso</h2>
-      <p>Explicación detallada del cuarto paso, incluyendo imágenes o vídeos si es necesario.</p>
+      <h2>Punto 4: Luces de estado de los equipos de Internet 🟢🟠</h2>
+
+      <div class="soporte-container">
+        <div class="img-soporte">
+               <label><strong>Fibra óptica</strong></label><br>
+  
+               <img src="img/Conexiones-Internas/onu.jpg" class="luces-fibra-onu" width="350" height="350">
+              
+              <img src="img/Conexiones-Internas/onuconection0.jpeg" class="conection-fibra-o efecto" width="350" height="350">
+
+              <img src="img/Conexiones-Internas/lucesrfibra.jpg" class="luces-fibra-router" width="350" height="350">
+              
+              
+  
+        </div>
+  
+        <div class="img-soporte">
+               <label><strong>Radioenlace</strong></label><br>
+              <img src="img/Conexiones-Internas/poe.jpg" class="luces-radio-p" width="350" height="350">
+              
+              <img src="img/Conexiones-Internas/poeconection0.jpeg" class="luces-radio-p1 efecto" width="350" height="350">
+
+              <img src="img/Conexiones-Internas/lucesrradio.jpg" class="luces-radio-r" width="350" height="350">
+        
+  
+        </div>
+  
+      </div>
+
+      <p>Los equipos de internet, como los routers, PoE y ONU, tienen una serie de luces de estado que indican si el equipo está funcionando correctamente o si hay algún problema.<BR> Es importante tener en cuenta que la ubicación y el número de luces pueden variar según el modelo y la marca del equipo. En cualquier caso, si observas inconvenientes con el servicio y alguna luz de estado parpadeando de manera constante o si alguna de estas luces no está encendida, es posible que haya algún problema con tu conexión a internet. En ese caso, es recomendable contactar con el servicio técnico de Logística Digital, te atenderán muy amablemente.</p>
     </section>
     <section id="paso-5">
-      <h2>Item 5: Título del paso</h2>
-      <p>Explicación detallada del quinto paso, incluyendo imágenes o vídeos si es necesario.</p>
+      <h2>Punto 5: Recomendaciones eléctricas ⚡ </h2>
+      <p>Cuando contratamos un servicio de internet, nos entregan una serie de equipos que nos permiten conectarnos a la red. Sin embargo, muchas veces no le prestamos la atención necesaria a estos dispositivos y terminamos teniendo problemas de conexión o incluso dañando los equipos. Por eso, es importante tener en cuenta algunos cuidados técnicos para prolongar la vida útil de nuestros equipos de internet.<br> Las sobretensiones eléctricas pueden dañar los equipos de internet, por lo que es importante contar con protección contra sobretensiones. Esto se puede lograr mediante la utilización de un estabilizador de corriente, UPS o un sistema de protección contra sobrecargas.</p><br><br>
+
+      <div class="img-fullconect">
+        <img src="img/Energía/estabilizador.jpg"  class="img-fullconectr efecto" title="Estabilizador" width="500" height="250">
+ 
+        </div>
+        <br><br>
+
+        <div class="img-fullconect">
+
+        <img src="img/Energía/ups.jpg"  class="img-fullconectr efecto" title="UPS" width="500" height="250">
+          </div>
+          <br><br>
+     
+ 
+
+ </div>
+
+
     </section>
     <section id="conclusion">
       <h2>Conclusión</h2>
-      <p>Resumen del proceso y recomendaciones adicionales. También se puede incluir un formulario de contacto o un enlace a una página de soporte si el proceso puede generar problemas o dudas.</p>
+      <p>1. "Recuerden, amigos, una conexión a internet no es solo una conexión, es una responsabilidad. Traten a su módem con el mismo cariño que tratarían a un recién nacido... Bueno, tal vez no tan lejos, pero sí cuídenlo, que no es fácil criar una señal Wi-Fi fuerte y saludable."<br><br>
+
+        2. "Instalar un router no es ciencia de cohetes, pero tampoco es tarea de niños. Asegúrense de no enchufar su modem a una tostadora y de no poner su router en el horno. Con estos consejos básicos, ya estarán por encima de la media de usuarios de internet."<br><br>
+        
+        3. "En resumen, si quieren tener una conexión a internet fiable y duradera, hay que tratarla como a un cactus del desierto: dale un lugar soleado, riega con moderación y no lo toques demasiado. Y, por supuesto, ¡no intentes conectarte desde la ducha!"</p>
     </section>
   </main>
+  (▀̿̿Ĺ̯̿▀̿ ̿)
   <footer>
-    <p>© Año de publicación - Todos los derechos reservados</p>
+    <p>Daniel F. Rincón © 2023 - <a href="https://logisticadigital.com.co/" class="link-pie">L-D</a> - Todos los derechos reservados</p>
   </footer>
+
+
+
+  <script src="codigo.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="sweetalert2.min.js"></script>
+
 </body>
 </html>
